@@ -11,14 +11,14 @@
 
 window.hbbSel=[];
 if (jQuery) (function($) {
-    var xhr;
-    var haveContent=false;
-    var haveMoved=false;
-    var content='';
-    var loading=false;
-
     $.extend($.fn, {
         hashBangBoom: function(options) {
+            var xhr;
+            var haveContent=false;
+            var haveMoved=false;
+            var content='';
+            var loading=false;
+
             var o=options;
             o.linkSelector=this;
 
