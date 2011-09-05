@@ -47,7 +47,7 @@ if (jQuery) (function($) {
     var hashify = function() {
         // hashify links
         $(hbbSel.join(', ')).each(function() {
-            var newhref=this.href.replace('http://'+window.location.hostname+'/','');
+            var newhref=this.href.replace(window.location.protocol+'//'+window.location.hostname+'/','');
             if (!this.href.match('/#!/')) {
                 this.href='/#!/'+newhref;
             }
